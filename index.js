@@ -523,7 +523,7 @@ io.on("connection", (socket) => {
     if (!characters.find((c) => c.id === character.id)) {
       characters.push(character);
     }
-    console.log(map);
+    // console.log(map);
     socket.emit("hello", {
       map,
       characters, // ✅ this now includes the new character
